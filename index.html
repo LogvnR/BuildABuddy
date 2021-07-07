@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build A Buddy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@200;300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <img id="logo" src="LRCrownWhite.png" alt="">
+    <div class="blurContainer"></div>
+    <div class="mainContainer">
+        <div class="userInput">
+            <section class="titleContainer">
+                <h1>Build A Buddy</h1>
+            </section>
+            <section class="mainUserInput">
+                <form action="" class="mainForm">
+                    <div class="buddyWelcome">
+                        <h3 class="buddyWelcome-Text">Hey There!</h3>
+                    </div>
+                    <div class="buddyName-Container">
+                        <label class="buddyNameLabel" for="buddyName">Buddy Name: </label>
+                        <input name="buddyName" id="buddyName" placeholder="Please Enter A Name" type="text"
+                            autocomplete="off">
+                    </div>
+                    <div class="buddyFavColor-Container">
+                        <label class="buddyFavColorLabel" for="buddyFavColor">Favorite Color: </label>
+                        <select name="buddyFavColor" id="buddyFavColor">
+                            <option value="NONE">Choose A Color</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Green">Green</option>
+                            <option value="Yellow">Yellow</option>
+                            <option value="Red">Red</option>
+                            <option value="Orange">Orange</option>
+                            <option value="Purple">Purple</option>
+                            <option value="Pink">Pink</option>
+                            <option value="Grey">Grey</option>
+                        </select>
+                    </div>
+                    <div class="submitBtn-Container">
+                        <button class="vBtn" id="submitBtn">Submit!</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div class="buddyModal">
+            <section class="buddyInfo-Container">
+                <div class="buddyInfoText-Container">
+                    <p class="nameInfo">Your Buddy: <span class="buddyNameInput">Name</span></p>
+                    <p class="colorInfo">Favorite Color: <span class="buddyColorInput">Color</span></p>
+                </div>
+                <div class="buddyResetBtn-Container">
+                    <button class="vBtn" id="resetBtn">Reset</button>
+                </div>
+            </section>
+            <section class="buddyDialogue-Container">
+                <p class="buddyDialogue">Hey There, This Where I'll Talk To You</p>
+            </section>
+            <section class="buddyInteraction-Container">
+                <div class="userJoke-Container">
+
+                    <button id="joke" class="vBtn">Joke</button>
+
+                </div>
+                <div class="userWeather-Container">
+
+                    <button id="weather" class="vBtn">Weather</button>
+
+                </div>
+                <div class="interaction-Container">
+                    <form action="" class="buddyQuestionForm">
+                        <select name="buddyQuestions" id="buddyQuestions">
+                            <option value="NONE">Ask Your Buddy A Question</option>
+                            <option value="Q1">Hey, How Are You?</option>
+                            <option value="Q2">What's Your Favorite Food?</option>
+                            <option value="Q3">What's Your Favorite Color?</option>
+                            <option value="Q4">What's Your Name Again?</option>
+                        </select>
+                        <div class="buddyQuestions-Container"><button class="vBtn buddyQuestions-btn"
+                                id="askBtn">ASK!</button></div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
